@@ -1,0 +1,434 @@
+/*---------------------
+-----------------------
+ common styles
+ -----------------------
+ ----------------------- */
+
+body{
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(255, 251, 251);
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+/* font css */
+/* font-family: 'Lobster Two', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+img{
+    width: 100%;
+}
+.container{
+    padding: 10px 0;
+}
+
+
+
+/*------------------- 
+header styles
+---------------------- */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    
+    border-radius: 30px;
+    margin-top: 70px;
+}
+.header-items{
+    
+    width: 50%;
+}
+.header-item-text{
+    padding-right: 50px;
+    padding-left: 100px;
+    
+}
+.header-item-text h1{
+    font-size: 3.5em;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0;
+}
+.header-item-text p{
+    line-height: 2em;
+    color: silver;
+    font-weight: lighter;
+}
+.btn{
+    width: 120px;
+    height: 30px;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.btn:hover{
+    transform: scale(1.1);
+    background-color: purple;
+}
+.header-item-img{
+    width: 80%;
+    padding-top: 7%;
+}
+
+
+
+/*--------------------- 
+blog section styles
+------------------------ */
+
+.blog-section{
+    display: grid;
+    grid-template-columns: 250px repeat(1,1fr);
+    
+    background-color: #fff;
+    margin-top: 30px;
+    padding: 40px 20px;
+    border-radius: 6px;
+}
+.date-line{
+    background-color: black;
+    color: white;
+    margin: 10px 20px;
+    padding: 15px 10px ;
+    
+    border-radius: 12px;
+    text-align: center;    
+    height: 200px;
+    align-items: center;
+    
+}
+.date-line li{
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 12px;
+    transition: all 0.5s;
+}
+.date-line li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.date-line li:hover{
+    transform: scale(1.1);
+    background-color: red;
+    
+}
+
+
+.match-blog{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.card{
+    cursor: pointer;
+    margin: 20px 10px;
+    background-color: white;
+    box-shadow: 6px 6px 16px gray;
+    border-radius: 12px;
+    transition: all 0.5s;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card img{
+    width: 100%;
+}
+.card-info{
+    padding: 20px;
+}
+.card-info .btn{
+    background-color: transparent;
+    color: black;
+    border: 1px solid gray;
+    font-size: 1.3em;
+    font-weight: lighter;
+    transition: all 0.5s;
+}
+.card-info .btn:hover{
+    background-color: greenyellow;
+    
+}
+.card-info p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.8em;
+}
+.match-blog .btn-2{
+    visibility: hidden;
+}
+
+
+
+
+/*---------------------
+ foter styles 
+ ----------------------*/
+
+footer{
+    background-color: rgba(0, 0, 0, 0.837);
+    color: white;
+    /* height: 200px; */
+    margin-top: -30px;
+    padding: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+.footer-container{
+    padding: 10px 20px;
+}
+footer h1{
+    text-align: center;
+    font-size: 2em;
+    
+}
+footer ul{
+    text-align: center;
+}
+footer ul li{
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    transition: all 0.5s;
+}
+footer ul li:hover{
+    background-color: rgba(0, 0, 0, 0.21);
+    border-radius: 12px;
+    transform: scale(1.1);
+}
+footer ul li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.351);
+    font-size: 0.8em;
+}
+footer hr{
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-color: silver;
+}
+.footer-link{
+    text-align: center;
+    margin-top: 50px;
+}
+.footer-link a{
+    border-radius: 50%;
+    font-size: 1.5em;
+    background-color: rgba(255, 255, 255, 0.019);
+    color: silver;
+    margin: 0px 30px;
+    padding: 10px 20px;
+}
+.footer-style{
+    color: yellow;
+}
+
+
+/*----------------------
+ index2 website styles
+-------------------------
+ */
+.card-img-2{
+    display: flex;
+    padding: 30px 15px 0px 15px;
+    align-items: center;
+    
+}
+.card-img-2 span{
+    padding: 0 10px;
+}
+.card-info-2{
+    text-align: center;
+    margin-top: -10px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.card-info-2 p{
+    font-family: 'Poppins', sans-serif;
+    word-spacing: 0.2em;
+    font-weight: lighter;
+    opacity: 0.5;
+}
+
+
+/* ----------------------
+-------------------------
+Media Query styles here 
+--------------------------
+-------------------------- */
+
+
+/*~~~~~~~~~~~~~~~~~~
+ for mobile device 
+ ~~~~~~~~~~~~~~~~~~~~*/
+ @media screen and (min-width: 200px ) and (max-width: 668px) {
+    
+    .header{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 30px;
+        border-radius: 5px;
+        flex-direction: column;
+        
+    }
+    .header-items{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .header-item-text{
+        
+        padding-right: 50px;
+        padding-left: 50px;
+        text-align: center;
+        overflow: hidden;
+    }
+    .header-item-text h1{
+        margin-top: 30px;
+        font-size: 1.5em;
+    }
+    .header-item-text p{
+        margin-bottom: 40px;
+        
+        white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        
+    }
+    .blog-section{
+        
+        display: flex;
+        flex-direction: column;
+    }
+    .date-line{
+        background-color: transparent;
+        width: 200px;
+        
+        margin: 0 auto;
+    }
+    .date-line li{
+        background-color: #fff;
+        box-shadow: 4px 4px 10px gray;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .match-blog{
+        
+        grid-template-columns: repeat(1,1fr);
+    }
+    .card-info p{
+        padding-right: 50px;
+    }
+    .card-vis{
+        display: none;
+    }
+    .match-blog .btn-2{
+        visibility: visible;
+        margin: 20 auto;
+        height: 50px;
+        cursor: pointer;
+    }
+    footer{
+        height: 90%;
+    }
+    footer ul li{
+        display: block;
+    }
+    
+    .footer-link a{
+        margin: 10px 5px;
+        font-size: 0.8em;
+    }
+ }
+
+
+ /* for tablate */
+
+ @media screen and (min-width: 669px) and (max-width: 992px) {
+    .header{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 30px;
+        border-radius: 20px;
+    }
+    .header-items{
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .header-item-text h1{
+        font-size: 1.8em;
+    }
+    .header-item-text p{
+        font-size: 0.7em;
+    }
+
+    .blog-section{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .date-line{
+        display: flex;
+        
+        height: 120px;
+        align-items: center;
+        background-color: transparent;
+        
+        margin: 0;
+        padding: 0;
+    }
+    .date-line li{
+        background-color: white;
+        box-shadow: 2px 2px 8px gray;
+        width: 50%;
+        padding: 20px;
+    }
+    .match-blog{
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    .card-vis{
+        display: none;
+    }
+
+    .match-blog .btn-2{
+        visibility: visible;
+        margin-left: 85%;
+        height: 50px;
+        cursor: pointer;
+        margin-top: 20px;
+        margin-bottom: 20%;
+    }
+    
+    
+ }
+
+ @media screen and (min-width: 993px) and (max-width: 1200px){
+    .header{
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    .header-item-text h1{
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+    .header-item-text p{
+        font-size: 0.9em;
+        line-height: 1.7em;
+        margin-bottom: 20px;
+    }
+ }
